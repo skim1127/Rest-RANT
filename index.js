@@ -1,5 +1,6 @@
 // require needed modules
 const express = require("express")
+require("dotenv").config()
 
 // initialize app
 const app = express()
@@ -13,7 +14,16 @@ app.get('/', (req, res) => {
     `)
 })
 
+// Wildcard Route
+app.get('*', (req, res) => {
+    res.status(404).send(`
+    <h1>
+        This Page does not exist. Go away :)
+    </h1>
+    `)
+})
+
 // Listen
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Listening to port 3000")
 })
