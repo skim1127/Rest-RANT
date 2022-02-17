@@ -5,6 +5,8 @@ require("dotenv").config()
 // initialize app
 const app = express()
 
+app.use('/places', require('./controllers/places'))
+
 // Create Home page route
 app.get('/', (req, res) => {
     res.send(`
@@ -27,3 +29,5 @@ app.get('*', (req, res) => {
 app.listen(process.env.PORT, () => {
     console.log("Listening to port 3000")
 })
+
+// ** Start from Rest Rant Part 1, Part Six: Make a Controller **
