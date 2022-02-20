@@ -16,16 +16,10 @@ app.get('/', (req, res) => {
 
 // Wildcard Route
 app.get('*', (req, res) => {
-    res.status(404).send(`
-    <h1>
-        This Page does not exist. Go away :)
-    </h1>
-    `)
+    res.render('error404')
 })
 
 // Listen
 app.listen(process.env.PORT, () => {
     console.log("Listening to port 3000")
 })
-
-// ** Start from Rest Rant Part 1, Part Six: Make a Controller **
