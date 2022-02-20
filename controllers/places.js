@@ -5,14 +5,14 @@ router.get('/', (req, res) => {
         name: 'Chok-Dee',
         city: 'Atlanta',
         state: 'WA',
-        cuisines: 'Thai',
-        pic: 'http://placekitten.com/250/250'
+        cuisines: 'Thai Food',
+        pic: '/images/fried-rice.jpg'
     }, {
         name: 'Mochinut',
-        city: 'Wanganui',
+        city: 'Whanganui',
         state: 'NZ',
         cuisines: 'Mochi-Donuts, Hot Dogs',
-        pic: 'https://place-puppy.com/250x250'
+        pic: '/images/Mochinut.jpg'
     }]
     res.render('places/index', {places})
 })
