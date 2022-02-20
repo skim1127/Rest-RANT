@@ -15,6 +15,7 @@ REST-Rant is an app where users can review restaurants.
 | POST    | /places/:id/rant         | Create rant about a particular place    |
 | DELETE  | /places/:id/rant/:rantId | Deletae a rant about a particular place |
 | GET     | *                        | 404 page                                |
+
 Acceptance Criteria
 ```
 Given the setup instructions, the project folder must be pushed to GitHub and titled rest-rant.
