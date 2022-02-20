@@ -1,6 +1,11 @@
 # Project REST-Rant
 
 REST-Rant is an app where users can review restaurants.
+<!-- Methods and Routes -->
+| First Header  | Second Header | Purpose      |
+| ------------- | ------------- | ------------ |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 Acceptance Criteria
 ```
