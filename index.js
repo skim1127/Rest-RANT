@@ -1,19 +1,17 @@
 // require needed modules
 const express = require("express")
 require("dotenv").config()
-
 // initialize app
 const app = express()
+
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
 
 app.use('/places', require('./controllers/places'))
 
 // Create Home page route
 app.get('/', (req, res) => {
-    res.send(`
-    <h1>
-        Welcome to the Home Page
-    </h1>
-    `)
+    res.render('home')
 })
 
 // Wildcard Route
