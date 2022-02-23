@@ -3,6 +3,10 @@ h1 {
     color: lightskyblue;
 }
 
+h3 {
+    color: lightgrey;
+}
+
 img {
     max-width: 400px;
 }
