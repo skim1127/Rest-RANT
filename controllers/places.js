@@ -1,5 +1,14 @@
 const router = require('express').Router()
 
+router.get('/new', (req, res) => {
+    res.render('places/new')
+})
+
+router.get('/places/:id', (req, res) => {
+    let id = req.params.id
+    console.log(id)
+})
+
 router.get('/', (req, res) => {
     let places = [{
         name: 'Chok-Dee',
