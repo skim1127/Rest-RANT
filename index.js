@@ -10,6 +10,10 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 
+// PARSING REQ
+app.use(express.urlencoded({extended: true}))
+
+// require controller
 app.use('/places', require('./controllers/places'))
 
 // Create Home page route
