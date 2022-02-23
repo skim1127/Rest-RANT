@@ -14,7 +14,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 
 // require controller
-app.use('/places', require('./controllers/places'))
+app.use('/places', require('./controllers/places_controller'))
 
 // Create Home page route
 app.get('/', (req, res) => {
