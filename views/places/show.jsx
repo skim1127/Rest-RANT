@@ -32,7 +32,7 @@ function show(data) {
         comments = data.place.comments.map(c => {
             return(
                 <div className="border" key={ data.place.name }>
-                    <h2 className="rant">{ c.rant ? 'RANT! >:(' : 'RAVE! <3' }</h2>
+                    <h2 className="rant">{ c.rant ? 'RANT! 😡' : 'RAVE! 😍' }</h2>
                     <h4>{ c.content }</h4>
                     <h3>
                         <strong>- { c.author }</strong>

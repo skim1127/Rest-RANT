@@ -1,10 +1,13 @@
 h1 {
     text-align: center;
-    color: lightskyblue;
+    color: black;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 h3 {
-    color: rgb(133, 133, 133);
+    color: rgb(56, 186, 230);
 }
 
 img {
@@ -13,11 +16,14 @@ img {
 
 p {
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
 }
 
 /* NAV BAR STYLING */
 nav {
-    background-color: lightgreen;
+    background-color: rgb(250, 214, 219);
     padding: 10px;
 }
 
@@ -32,8 +38,8 @@ nav li {
 }
 
 nav a {
-    color: rgb(95, 65, 0);
-    font-size: 1.5em;
+    color: rgb(250, 105, 52);
+    font-size: 2em;
 }
 
 nav a:hover {
@@ -43,7 +49,7 @@ nav a:hover {
 
 /* ADDING MARGINS TO GENERAL CONTENT */
 body {
-    background-color: lightblue;
+    background-color: rgb(250, 214, 219);
     text-align: center;
 }
 
@@ -51,6 +57,7 @@ main {
     margin-right: 20px;
     margin-left: 20px;
     background-color: white;
+    border-radius: 40px;
 }
 
 /* COMMENTS SECTION */
